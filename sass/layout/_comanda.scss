@@ -50,3 +50,38 @@
     line-height: 1.19;
     margin-bottom: 16px;
 }
+
+@media screen and (max-width: 767px) {
+    .comanda-photo: {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .comanda {
+        .container {
+            display: block;
+        }
+
+        .team-list {
+            margin: -15px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .comanda-photo {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .comanda-photo {
+        padding-bottom: 30px;
+    }
+
+    .comanda-photo {
+        margin-right: 30px;
+    }
+}

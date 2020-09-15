@@ -2,3 +2,10 @@
   list-style: none;
   /*стиль маркера, тут выбран без подчеркивания*/
 }
+
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
