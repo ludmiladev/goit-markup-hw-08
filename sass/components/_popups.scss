@@ -236,7 +236,7 @@ a {
 
   }
 
-  .modal-form-check:checked+.modal-form-check-label::before {
+  .modal-form-check:checked + .modal-form-check-label::before {
     background-size: 0, contain;
   }
 
@@ -263,3 +263,4 @@ a {
   .modal-form-btn:focus {
     outline: none;
   }
+}
