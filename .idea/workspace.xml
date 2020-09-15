@@ -2,8 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e385eb5-9d09-49fc-9173-d462625931cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/goit-markup-hw-08.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/prettier.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/portfolio.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/portfolio.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/portfolio.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/portfolio.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/portfolio.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/portfolio.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/block-chema.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/client-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/client-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/client-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/client-4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/client-5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/client-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/convert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cosmonavt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/foto-igor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/foto-mihail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/foto-nikolaj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/foto-olga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/geroj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hcasi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon-send.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/krestik.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/linkedin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/linkedin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/microscop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/modall-defs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/modalnoe-okno.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/nout.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/nout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/planshet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portfolio_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portfolio_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portfolio_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portfolio_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portfolio_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portfolio_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portfolio_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portfolio_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portfolio_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/samolet-chelovek.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sprit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/symbol-defs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/symbol-defs.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tehnokrak-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tehnokrak.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/normalize.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600193004067</updated>
       <workItem from="1600193005355" duration="531000" />
+      <workItem from="1600193538029" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="Добавила клас">
       <created>1600193060634</created>
@@ -44,7 +104,35 @@
       <option name="project" value="LOCAL" />
       <updated>1600193060634</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавила клас">
+      <created>1600193554389</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600193554389</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавила клас">
+      <created>1600193608979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600193608979</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавила cekцию">
+      <created>1600193729472</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600193729472</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавила картинки">
+      <created>1600193796806</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600193796806</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -52,20 +140,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавила клас" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавила клас" />
+    <MESSAGE value="Добавила cekцию" />
+    <MESSAGE value="Добавила картинки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавила картинки" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-984" y="254" key="CommitChangelistDialog2" timestamp="1600193059638">
+    <state x="-984" y="254" key="CommitChangelistDialog2" timestamp="1600193795756">
       <screen x="-1218" y="174" width="1218" height="1024" />
     </state>
-    <state x="-984" y="254" key="CommitChangelistDialog2/62.0.1858.1200/-1218.174.1218.1024@-1218.174.1218.1024" timestamp="1600193059638" />
+    <state x="-984" y="254" key="CommitChangelistDialog2/62.0.1858.1200/-1218.174.1218.1024@-1218.174.1218.1024" timestamp="1600193795756" />
     <state x="-829" y="441" key="FileChooserDialogImpl" timestamp="1600193535105">
       <screen x="-1218" y="174" width="1218" height="1024" />
     </state>
     <state x="-829" y="441" key="FileChooserDialogImpl/62.0.1858.1200/-1218.174.1218.1024@-1218.174.1218.1024" timestamp="1600193535105" />
-    <state x="-1017" y="419" key="Vcs.Push.Dialog.v2" timestamp="1600193077064">
+    <state x="-1017" y="419" key="Vcs.Push.Dialog.v2" timestamp="1600193805226">
       <screen x="-1218" y="174" width="1218" height="1024" />
     </state>
-    <state x="-1017" y="419" key="Vcs.Push.Dialog.v2/62.0.1858.1200/-1218.174.1218.1024@-1218.174.1218.1024" timestamp="1600193077064" />
+    <state x="-1017" y="419" key="Vcs.Push.Dialog.v2/62.0.1858.1200/-1218.174.1218.1024@-1218.174.1218.1024" timestamp="1600193805226" />
   </component>
 </project>
