@@ -51,3 +51,28 @@
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    margin-bottom: 60px;
+  }
+
+  .site-nav .list-item {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    margin-right: 84px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    .site-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 305px;
+    }
+  }
+}
