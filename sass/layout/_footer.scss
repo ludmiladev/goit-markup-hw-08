@@ -1,6 +1,5 @@
-/* Cтилизация футера */
 
-/* Стилизация контактных данных футера: адрес, тел , емейл */
+
 .bottom {
   /* padding-top: 60px;
   padding-bottom: 60px;*/
@@ -8,7 +7,7 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .bottom .rabot: {
+  .bottom .rabot {
     padding-bottom: 0;
   }
 }
@@ -23,11 +22,12 @@
   .bottom .section {
     padding: 0;
   }
+}
 
   .bottom .container {
     display: flex;
   }
-}
+
 
 .bottom .container {
   display: flex;
@@ -69,11 +69,12 @@ section {
     margin-top: 60px;
     margin-bottom: 60px;
   }
+}
 
   .bottom-svjaz a:not(:last-child) {
     margin-bottom: 9px;
   }
-}
+
 
 @media screen and (min-width: 768px) {
   .bottom .container {
@@ -136,3 +137,4 @@ section {
 
     color: var(--primary-gov-color);
   }
+}
