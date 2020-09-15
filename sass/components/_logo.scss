@@ -1,32 +1,44 @@
-/* Стилизация логотипа*/
-
 .logo {
-  font-family: Raleway, sans-serif;
-  /*шрифт*/
-  font-weight: 700;
-  /*насыщенность шрифта*/
-  font-size: 26px;
-  /*размер шрифта*/
-  line-height: 1.19;
-  /*междустрочный интервал*/
+  font-family: $logo-font-family;
+  @include font(24px, 1.17, 700);
+  span {
+    color: $accent-color;
+  }
+  .page-header & {
+    padding: 16px 0;
+    color: #000000;
+  }
+
+  .footer & {
+    margin-bottom: 20px;
+    color: $primary-wh-color;
+  }
 }
 
-.logo span {
-  color: var(--accent-color);
-  /*цвет*/
+@media screen and (max-width: 767px) {
+  .page-header .logo {
+    z-index: 1;
+    position: relative;
+  }
 }
 
-.top .logo {
-  padding-top: 24px;
-  /*отступ от верхнего края*/
-  padding-bottom: 25px;
-  /*отступ от нижнего края содержимог елемента*/
-  margin-right: 93px;
-  color: var(--title-text-color);
+@media screen and (max-width: 1199px) {
+  .footer .logo {
+    text-align: center;
+  }
 }
 
-.bottom .logo {
-  margin-bottom: 20px;
-  /*отступа от нижнего края */
-  color: var(--primary-gov-color);
+@media screen and (min-width: 768px) {
+  .page-header .logo {
+    margin-right: 88px;
+    padding: 26px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    @include font(26px, 1.19, 700);
+  }
 }

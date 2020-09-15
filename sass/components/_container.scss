@@ -1,8 +1,23 @@
 .container {
-  width: 1200px;
-  /*ширина*/
+  width: 100%;
   padding: 0 15px;
-  /*отступ от содержимого до края блока*/
-  margin: 0 auto;
-  /*это внешний отступ на всех 4 сторонах*/
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }

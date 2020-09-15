@@ -1,60 +1,68 @@
-.rabot {
-  padding-top: 94px;
-  /*Устанавливает значение поля от верхнего края содержимого элемента. Полем называется расстояние от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое*/
-  padding-bottom: 94px;
+.benefits .list {
+  &-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.pros .cape {
-  display: flex;
+.benefit-1::before {
+  background-image: url(../images/benefits/antenna.svg);
 }
 
-.pros .top-menu {
-  width: 270px;
+.benefit-2::before {
+  background-image: url(../images/benefits/clock.svg);
 }
 
-.pros .top-menu {
-  margin-right: 30px;
+.benefit-3::before {
+  background-image: url(../images/benefits/diagram.svg);
 }
 
-.pros .top-menu::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+.benefit-4::before {
+  background-image: url(../images/benefits/astronaut.svg);
 }
 
-.pros-microscop::before {
-  background-image: url(../images/microscop.svg);
-}
-
-.pros-hcasi::before {
-  background-image: url(../images/hcasi.svg);
-}
-
-.pros-nout::before {
-  background-image: url(../images/nout.svg);
-}
-
-.pros-cosmonavt::before {
-  background-image: url(../images/cosmonavt.svg);
-}
-
-.pros-title {
+.benefits-title {
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 700);
   text-transform: uppercase;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
-.pros-absaz {
-  font-size: 14px;
-  line-height: 1.72;
-  color: var(--primary-text-color);
+.benefits-text {
+  @include font(14px, 1.72);
+}
+
+@media screen and (max-width: 767px) {
+  .benefits .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .benefits-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits .list {
+    margin: -15px;
+  }
+  .benefits .list-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits .list-item {
+    width: 270px;
+  }
+  .benefits .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

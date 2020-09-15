@@ -1,64 +1,107 @@
-/* Cтилизация секции герой */
-
-.geroj {
-  /*height: 600px;*/
-  min-height: 600px;
-  outline: 1px solid black;
+.hero {
   max-width: 1600px;
-  margin: 0 auto;
-  /*margin-left: auto;
-  margin-top: auto;*/
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--secondary-sov-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/geroj.jpg);
-  /*background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/geroj.jpg);*/
-  background-position: center;
+  background-color: $secondary-bg-color;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  &-content {
+    text-align: center;
+    margin: 0 auto;
+    padding: 118px 60px;
+    max-width: 480px;
+  }
+
+  &-title {
+    margin-bottom: 30px;
+    @include font(26px, 1.62, 900);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $primary-wh-color;
+
+    text-align: center;
+  }
 }
-
-.geroj-content {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 696px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.geroj-title {
-  margin: 0 auto 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  /*делаем, чтоб все буквы были заглавными*/
-
-  color: var(--primary-gov-color);
-}
-
-.geroj-cnopca {
+.hero-button {
   display: block;
   width: 200px;
   min-height: 50px;
-  /*минимальная высота*/
   margin: 0 auto;
   padding: 10px 31px;
-
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(16px, 1.88, 700);
   letter-spacing: 0.06em;
 
-  color: var(--primary-gov-color);
-  background-color: var(--accent-color);
+  color: $primary-wh-color;
+  background-color: $accent-color;
 
   border-radius: 4px;
-  /*округляем края кнопки*/
   border-width: 0;
-  /*толщина*/
+  &:focus {
+    outline: none;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+  }
+  .hero-content {
+    text-align: center;
+    margin: 0 auto;
+    padding: 118px 204px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
+  }
+  .hero-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 696px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .hero-title {
+    margin: 0 auto 30px;
+    @include font(44px, 1.36, 900);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $primary-wh-color;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop@2x.jpg);
+  }
 }

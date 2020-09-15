@@ -1,40 +1,59 @@
-/*Cтилизация секции наши клиенты*/
-
-.clients-postojannie {
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.17;
-}
-
-.clients .cape {
+.clients .list {
   display: flex;
-  justify-content: center;
-}
-
-.clients .top-menu {
-  margin-right: 30px;
+  flex-wrap: wrap;
 }
 
 .clients .list-item-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
+  @extend %align-center;
   height: 90px;
   border: 1px solid #afb1b8;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients .list-item-link:hover {
-  border: 1px solid var(--accent-color);
-}
-
-.clients .list-item-link-svg {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border: 1px solid $accent-color;
+  }
+  &-svg {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .clients .list-item-link:hover .list-item-link-svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
+}
+
+@media screen and (max-width: 767px) {
+  .clients .list-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients .container {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients .list-item {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients .list {
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients .list {
+    justify-content: center;
+  }
+  .clients .list-item-link {
+    width: 170px;
+  }
+  .clients .list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
