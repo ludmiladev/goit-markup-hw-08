@@ -1,0 +1,33 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  /*выравнивание картинок по центру относительно всего контейнера*/
+  margin-bottom: 34px;
+}
+
+.filter-cnopca {
+  display: inline-block;
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-lav-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  border-width: 0;
+}
+
+.cnopca {
+  margin-right: 8px;
+}
+
+.filter-cnopca:hover,
+/*ховер и фокус*/
+.filter-cnopca:focus {
+  color: var(--primary-gov-color);
+  background-color: var(--accent-color);
+}
