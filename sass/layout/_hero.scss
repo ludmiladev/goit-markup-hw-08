@@ -1,106 +1,72 @@
-/* Cтилизация секции герой */
-
-.geroj {
-  /*height: 600px;*/
-  min-height: 600px;
-  outline: 1px solid black;
-  max-width: 1600px;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
   margin: 0 auto;
-  /*margin-left: auto;
-  margin-top: auto;*/
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--secondary-sov-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/geroj.jpg);
-  /*background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/geroj.jpg);*/
-  background-position: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
+  background-position: left top;
   background-size: cover;
-}
+  padding: 100px 10px;
 
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx),
-screen and (min-width: 320px) {
-  .geroj {
+  @include for-size(tablet-landscape) {
+    padding: 200px 0;
+  }
+
+  @include for-size(desktop) {
+    max-width: 1600px;
+    padding: 200px 0;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 96dpi) and (min-width: 320px),
+    screen and (min-resolution: 1dppx) and (min-width: 320px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
   }
-}
 
-@media screen and (min-width: 768px) {
-  .geroj {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
   }
 
-  .geroj-content {
-    text-align: center;
-    margin: 0 auto;
-    padding: 118px 204px;
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx),
-screen and (min-width: 768px) {
-  .geroj {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .geroj-content {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 696px;
-    padding-right: 15px;
-    padding-left: 15px;
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   }
 
-  .geroj-title {
-    margin: 0 auto 30px;
-    font-weight: 900;
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero@2x.jpg);
+  }
+}
+
+.hero-section {
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  @include for-size(desktop) {
+    max-width: 696px;
+  }
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+
+  @include for-size(desktop) {
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    /*делаем, чтоб все буквы были заглавными*/
-
-    color: var(--primary-gov-color);
   }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx),
-screen and (min-width: 1200px) {
-  .geroj {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop@2x.jpg);
-  }
-}
-
-.geroj-cnopca {
-  display: block;
-  width: 200px;
-  min-height: 50px;
-  /*минимальная высота*/
-  margin: 0 auto;
-  padding: 10px 31px;
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: var(--primary-gov-color);
-  background-color: var(--accent-color);
-
-  border-radius: 4px;
-  /*округляем края кнопки*/
-  border-width: 0;
-  /*толщина*/
 }

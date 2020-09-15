@@ -1,68 +1,35 @@
-/* Стилизация логотипа*/
-
-.logo {
-  font-family: Raleway, sans-serif;
-  /*шрифт*/
+header .logo {
+  color: $title-text-color;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  /*насыщенность шрифта*/
-  font-size: 26px;
-  /*размер шрифта*/
+  font-size: 24px;
   line-height: 1.19;
-  /*междустрочный интервал*/
-}
+  letter-spacing: 0.03em;
+  text-decoration: none;
 
-.logo span {
-  color: var(--accent-color);
-  /*цвет*/
-}
-
-.top .logo {
-  padding-top: 24px;
-  /*отступ от верхнего края*/
-  padding-bottom: 25px;
-  /*отступ от нижнего края содержимог елемента*/
-  margin-right: 93px;
-  color: var(--title-text-color);
-  padding: 16px 0;
-  color: #000000;
-}
-
-.bottom .logo {
-  margin-bottom: 20px;
-  /*отступа от нижнего края */
-  color: var(--primary-gov-color);
-}
-
-@media screen and (max-width: 767px) {
-  .top.logo {
-    z-index: 1;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .bottom .logo {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .top .logo {
+  @include for-size(tablet-landscape) {
     margin-right: 88px;
-    padding: 26px 0;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 93px;
+    font-size: 26px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .top .logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    font-weight: 700;
-    /*насыщенность шрифта*/
-    font-size: 26px;
-    /*размер шрифта*/
-    line-height: 1.19;
+footer .logo {
+  color: $primary-white-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 
+  @include for-size(desktop) {
+    font-size: 26px;
   }
+}
+.logo > span {
+  color: $accent-color;
 }

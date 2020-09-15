@@ -1,28 +1,17 @@
 .container {
-  width: 1200px;
-  /*ширина*/
-  padding: 0 15px;
-  /*отступ от содержимого до края блока*/
   margin: 0 auto;
-  /*это внешний отступ на всех 4 сторонах*/
-}
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 
-@media screen and (min-width: 480px) {
-  .container {
+  @include for-size(tablet-portrait) {
     width: 480px;
-    margin: 0 auto;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
+  @include for-size(tablet-landscape) {
     width: 768px;
-    display: flex;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .container {
+  @include for-size(desktop) {
     width: 1200px;
   }
 }

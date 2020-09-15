@@ -1,15 +1,16 @@
-@import "./components/portfolio-components";
-@import "./layout/portfolio-filter";
-@import "./base/common";
-@import "./components/visually-hidden";
-@import "./components/section";
-@import "./components/container";
-@import "./components/cape";
-@import "./components/social-list";
-@import "./components/logo";
-@import "./layout/site-nav";
-@import "./layout/header-contacts";
-@import "./layout/footer";
-@import "./components/podpuska";
 @import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+@import "./base/common";
+
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/contacts";
 @import "./components/container";
+@import "./components/portfolio";
+@import "./components/filter-button";
+
+@import "./layout/section";
+@import "./layout/header";
+@import "./layout/project";
+@import "./layout/footer";

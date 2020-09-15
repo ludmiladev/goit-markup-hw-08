@@ -1,150 +1,20 @@
+body {
+  color: $primary-text-color;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 *,
 *::before,
-/*наследует стиль от элемента к которому добавляется*/
 *::after {
-  /* создаёт псевдоэлемент после содержимого элемента. Не у всех элементов есть собственное содержимое, поэтому ::after не даёт результата для <img>, <input> и ряда других элементов.*/
   margin: 0;
-  /*это внешний отступ на всех 4 сторонах*/
   padding: 0;
-  /*задает отступ от содержимого до края блока*/
-  box-sizing: border-box;
-  /*размер коробки: рамка-рамка;*/
 }
 
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  /*шрифт*/
-  font-weight: 400;
-  /*насыщенность шрифта*/
-  color: var(--primary-text-color);
-  letter-spacing: 0.03em;
-  /*сгущенность шрифра*/
-  background-color: var(--primary-gov-color);
-  /*цвет фона*/
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  flex: 0 0 auto;
-}
-
-main {
-  flex: 1 0 auto;
-}
-
-footer {
-  flex: 0 0 auto;
-}
-
-a {
-  display: block;
-  /*сделать блочным*/
-  text-decoration: none;
-  /*убрали подчеркивание ссылки*/
-}
-
-button {
-  cursor: pointer;
-  /*чтобы кнопка выделялась при нажатии*/
-  display: inline-block;
-  /*изменили на строчно-блочный, для придания формы кнопке */
-  padding: 0 0;
-
-  button:focus {
-    outline: none;
-
-  }
-
-  img {
-    display: block;
-    /*Превращение тега <img> в блочный элемент*/
-    max-width: 100%;
-    /*максимальная ширина*/
-    object-fit: cover;
-    /*отрезаем стороны img сoхраняя соотношение сторон */
-  }
-
-  address {
-    font-style: normal;
-    /*стиль шрифта*/
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--title-text-color);
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  header {
-    /* padding-top: 35px;
-  /*отступ от верхнего края*/
-    /* padding-bottom: 29px;*/
-    /*отступ от нижнего края содержимог оелемента*/
-    background-color: var(--primary-gov-color);
-  }
-
-  header .container {
-    display: flex;
-    /*поставили в ряд из привет!*/
-    align-items: center;
-    /*выравнивам по центру*/
-  }
-
-  /*Cтилизация страницы студия*/
-  h1,
-  h2,
-  h3,
-  h4 {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--title-text-color);
-  }
-
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  /*Стилизация макета портфолио*/
-
-
-  .rabot {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  /*Cтилизация меню макета портфолио*/
-  button {
-    padding: 0 0;
-  }
-
-  header {
-    border-bottom: 1px solid #f5f4fa;
-  }
+ul {
+  list-style: none;
 }
