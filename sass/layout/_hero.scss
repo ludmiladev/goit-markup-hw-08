@@ -20,24 +20,66 @@
   background-size: cover;
 }
 
-.geroj-content {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 696px;
-  padding-right: 15px;
-  padding-left: 15px;
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-width: 320px) {
+  .geroj {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
+  }
 }
 
-.geroj-title {
-  margin: 0 auto 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  /*делаем, чтоб все буквы были заглавными*/
+@media screen and (min-width: 768px) {
+  .geroj {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+  }
 
-  color: var(--primary-gov-color);
+  .geroj-content {
+    text-align: center;
+    margin: 0 auto;
+    padding: 118px 204px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-width: 768px) {
+  .geroj {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .geroj-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 696px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .geroj-title {
+    margin: 0 auto 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    /*делаем, чтоб все буквы были заглавными*/
+
+    color: var(--primary-gov-color);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-width: 1200px) {
+  .geroj {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop@2x.jpg);
+  }
 }
 
 .geroj-cnopca {

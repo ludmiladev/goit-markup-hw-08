@@ -67,3 +67,16 @@
   background-position: 0 25px;
   color: var(--accent-color);
 }
+
+@media screen and (max-width: 767px) {
+  .nav-svjaz a: {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-svjaz {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
