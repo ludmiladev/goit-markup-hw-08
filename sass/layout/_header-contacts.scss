@@ -47,7 +47,7 @@
 .nav-svjaz-phone {
   /*fill: var(--primary-text-color);*/
   fill: currentColor;
-  background: url('./images/symbol-defs.svg');
+  background: url('/images/symbol-defs.svg');
   background-size: 100%;
   width: 10px;
   height: 16px;
@@ -57,7 +57,7 @@
 }
 
 .nav-svjaz-convert {
-  background: url('./images/symbol-defs.svg');
+  background: url('/images/symbol-defs.svg');
   background-size: 100%;
   width: 16px;
   height: 12px;
@@ -68,15 +68,16 @@
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
-  .nav-svjaz a: {
-    margin-bottom: 16px;
-  }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav-svjaz {
-    padding-top: 21px;
-    padding-bottom: 21px;
+@media screen and (max-width: 767px) {
+  .nav-svjaz a {
+    margin-bottom: 16px;
+
   }
-}
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .nav-svjaz {
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+
