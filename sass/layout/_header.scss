@@ -1,0 +1,10 @@
+.page-header {
+  position: relative;
+  padding: 16px 0;
+  border-bottom: 1px solid #ececec;
+
+  @include for-size(desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
