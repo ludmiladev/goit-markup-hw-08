@@ -17,6 +17,26 @@
   /*это внешний отступ на всех 4 сторонах*/
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -45,6 +65,21 @@ body {
   /*сгущенность шрифра*/
   background-color: var(--primary-gov-color);
   /*цвет фона*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
 }
 
 a {
@@ -59,9 +94,17 @@ button {
   /*чтобы кнопка выделялась при нажатии*/
   display: inline-block;
   /*изменили на строчно-блочный, для придания формы кнопке */
+  padding: 0 0;
+  /*Cтилизация страницы студия*/
+  /*Стилизация макета портфолио*/
+  /*Cтилизация меню макета портфолио*/
 }
 
-img {
+button button:focus {
+  outline: none;
+}
+
+button img {
   display: block;
   /*Превращение тега <img> в блочный элемент*/
   max-width: 100%;
@@ -70,36 +113,36 @@ img {
   /*отрезаем стороны img сoхраняя соотношение сторон */
 }
 
-address {
+button address {
   font-style: normal;
   /*стиль шрифта*/
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
+button h1,
+button h2,
+button h3,
+button h4,
+button p {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--title-text-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
+button h1,
+button h2,
+button h3,
+button h4,
+button p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-p {
+button p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-header {
+button header {
   /* padding-top: 35px;
   /*отступ от верхнего края*/
   /* padding-bottom: 29px;*/
@@ -107,46 +150,50 @@ header {
   background-color: var(--primary-gov-color);
 }
 
-header .container {
+button header .container {
   display: flex;
   /*поставили в ряд из привет!*/
   align-items: center;
   /*выравнивам по центру*/
 }
 
-/*Cтилизация страницы студия*/
-h1,
-h2,
-h3,
-h4 {
+button h1,
+button h2,
+button h3,
+button h4 {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--title-text-color);
 }
 
-p {
+button p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/*Стилизация макета портфолио*/
-.rabot {
+button .rabot {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/*Cтилизация меню макета портфолио*/
-button {
+button button {
   padding: 0 0;
 }
 
-header {
+button header {
   border-bottom: 1px solid #f5f4fa;
 }
 
 .cape {
   list-style: none;
   /*стиль маркера, тут выбран без подчеркивания*/
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .scrit {
@@ -186,12 +233,47 @@ header {
   /*отступ от нижнего края содержимог елемента*/
   margin-right: 93px;
   color: var(--title-text-color);
+  padding: 16px 0;
+  color: #000000;
 }
 
 .bottom .logo {
   margin-bottom: 20px;
   /*отступа от нижнего края */
   color: var(--primary-gov-color);
+}
+
+@media screen and (max-width: 767px) {
+  .page-header .logo {
+    z-index: 1;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .logo {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header .logo {
+    margin-right: 88px;
+    padding: 26px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-weight: 700;
+    /*насыщенность шрифта*/
+    font-size: 26px;
+    /*размер шрифта*/
+    line-height: 1.19;
+  }
 }
 
 .site-nav {
@@ -761,7 +843,7 @@ section {
 }
 
 /* Cтилизация модального окна*/
-.backdrop {
+.pop-ups {
   position: fixed;
   top: 0;
   left: 0;
@@ -773,7 +855,7 @@ section {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.pop-ups.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -781,22 +863,41 @@ section {
   /* transform: scale(0.75); */
 }
 
-.modal {
+.backdrop {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  overflow: hidden auto;
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+  min-height: 609px;
+  margin: auto;
   background-color: var(--primary-gov-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+.pop-ups.is-hidden .modal {
+  transform: scale(0);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    width: 100%;
+    min-height: 581px;
+  }
 }
 
 .knopka-modal {
@@ -818,6 +919,7 @@ section {
 .knopka-modal:hover,
 .knopka-modal:focus {
   fill: var(--accent-color);
+  outline: none;
 }
 
 .modal-form {
