@@ -25,36 +25,71 @@
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
-.pros-microscop::before {
-  background-image: url(../images/microscop.svg);
-}
+@media screen and (min-width: 1200px) {
+  .benefits .list-item {
+    width: 270px;
+  }
 
-.pros-hcasi::before {
-  background-image: url(../images/hcasi.svg);
-}
+  .pros-microscop::before {
+    background-image: url(./images/microscop.svg);
+  }
 
-.pros-nout::before {
-  background-image: url(../images/nout.svg);
-}
+  .pros-hcasi::before {
+    background-image: url(./images/hcasi.svg);
+  }
 
-.pros-cosmonavt::before {
-  background-image: url(../images/cosmonavt.svg);
-}
+  .pros-nout::before {
+    background-image: url(./images/nout.svg);
+  }
 
-.pros-title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+  .pros-cosmonavt::before {
+    background-image: url(./images/cosmonavt.svg);
+  }
 
-  color: var(--title-text-color);
-}
+  @media screen and (max-width: 767px) {
+    .pros .top-menu {
+      margin-bottom: 30px;
+    }
 
-.pros-absaz {
-  font-size: 14px;
-  line-height: 1.72;
-  color: var(--primary-text-color);
+    .pros-title {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .pros .cape {
+      margin: -15px;
+    }
+
+    .pros .top-menu {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .pros .top-menu {
+      width: 270px;
+    }
+
+
+    .pros-title {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+
+      color: var(--title-text-color);
+    }
+
+    .pros-absaz {
+      font-size: 14px;
+      line-height: 1.72;
+      color: var(--primary-text-color);
+    }
+  }
 }
