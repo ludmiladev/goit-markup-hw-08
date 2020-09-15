@@ -34,14 +34,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .page-header .logo {
+  .top.logo {
     z-index: 1;
     position: relative;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .footer .logo {
+  .bottom .logo {
     text-align: center;
   }
 }
