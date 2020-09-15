@@ -1,44 +1,35 @@
-.logo {
-  font-family: $logo-font-family;
-  @include font(24px, 1.17, 700);
-  span {
-    color: $accent-color;
-  }
-  .page-header & {
-    padding: 16px 0;
-    color: #000000;
-  }
+header .logo {
+  color: $title-text-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 
-  .footer & {
-    margin-bottom: 20px;
-    color: $primary-wh-color;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .page-header .logo {
-    z-index: 1;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .footer .logo {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-header .logo {
+  @include for-size(tablet-landscape) {
     margin-right: 88px;
-    padding: 26px 0;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 93px;
+    font-size: 26px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .page-header .logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    @include font(26px, 1.19, 700);
+
+footer .logo {
+  color: $primary-white-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  @include for-size(desktop) {
+    font-size: 26px;
   }
+}
+.logo > span {
+  color: $accent-color;
 }

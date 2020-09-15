@@ -1,21 +1,22 @@
 @import "./utils/variables";
+@import "./utils/visually-hidden";
 @import "./utils/mixins";
-@import "./utils/align-center";
 @import "./base/common";
-@import "./components/visually-hidden";
-@import "./components/title";
-@import "./components/section";
-@import "./components/container";
-@import "./components/list";
-@import "./components/social-list";
-@import "./components/popups";
+
 @import "./components/logo";
+@import "./components/navigation";
+@import "./components/contacts";
+@import "./components/container";
+@import "./components/button";
+@import "./components/social-list";
+@import "./components/modal-form";
+@import "./components/modal-window";
+
+@import "./layout/section";
 @import "./layout/header";
-@import "./layout/site-nav";
-@import "./layout/header-contacts";
-@import "./layout/footer";
 @import "./layout/hero";
-@import "./layout/benefits";
-@import "./layout/activity";
+@import "./layout/feature";
+@import "./layout/work-list";
 @import "./layout/team";
 @import "./layout/clients";
+@import "./layout/footer";

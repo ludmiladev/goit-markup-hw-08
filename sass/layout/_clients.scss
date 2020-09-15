@@ -1,59 +1,77 @@
-.clients .list {
+.client-list {
   display: flex;
+
   flex-wrap: wrap;
 }
-
-.clients .list-item-link {
-  @extend %align-center;
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 90px;
   border: 1px solid #afb1b8;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    border: 1px solid $accent-color;
-  }
-  &-svg {
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    & .client-item-svg,
+    & .client-item-svg {
+      fill: $accent-color;
+    }
   }
 }
 
-.clients .list-item-link:hover .list-item-link-svg {
-  fill: $accent-color;
-}
-
-@media screen and (max-width: 767px) {
-  .clients .list-item {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
+.client-list-item {
+  width: calc((100% - 30px) / 2);
+  @include for-size(tablet-landscape) {
+    width: calc((100% - 30px * 2) / 3);
+  }
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 5) / 6);
   }
 }
 
-@media screen and (min-width: 768px) {
-  .clients .container {
-    display: block;
+.client-list-item:not(:nth-child(2n)) {
+  margin-right: 30px;
+  @include for-size(tablet-landscape) {
+    margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients .list-item {
-    width: calc((100% - 6 * 15px) / 3);
-    margin: 15px;
+.client-list-item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 30px;
+  @include for-size(tablet-landscape) {
+    margin-bottom: 0;
   }
 }
-
-@media screen and (max-width: 1199px) {
-  .clients .list {
-    margin: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients .list {
-    justify-content: center;
-  }
-  .clients .list-item-link {
-    width: 170px;
-  }
-  .clients .list-item:not(:last-child) {
+.client-list-item:not(:nth-child(3n)) {
+  @include for-size(tablet-landscape) {
     margin-right: 30px;
   }
+  @include for-size(desktop) {
+    margin-right: 0;
+  }
+}
+.client-list-item:not(:nth-last-child(-n + 3)) {
+  @include for-size(tablet-landscape) {
+    margin-bottom: 30px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.client-list-item:not(:last-child) {
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
+}
+.client-item-svg {
+  fill: #afb1b8;
+}
+
+.client-item-svg {
+  fill: #afb1b8;
 }
