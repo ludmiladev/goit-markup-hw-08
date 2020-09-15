@@ -1,0 +1,66 @@
+/* Cтилизация подписки на сайт*/
+.podpuska-sity {
+    margin-top: 72px;
+    margin-bottom: 94px;
+}
+
+.podpuska-text {
+    display: inline-block;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--primary-gov-color);
+}
+
+.podpuska-form-input:focus,
+.podpuska-button:focus {
+    outline: none;
+}
+
+.podpuska-form-input {
+    width: 358px;
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: var(--primary-gov-color);
+    border: 1px solid #ffffff4d;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.podpuska-form-input::placeholder {
+    padding-top: 15px;
+    font-size: 16px;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.podpuska-button {
+    position: relative;
+    width: 200px;
+    min-height: 50px;
+    margin: 0 auto;
+    padding: 10px 29px;
+    text-align: left;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-gov-color);
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border-width: 0;
+}
+
+.podpuska-button-icon {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    fill: #ffffff;
+}

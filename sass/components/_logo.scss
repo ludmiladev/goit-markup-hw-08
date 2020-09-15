@@ -1,0 +1,32 @@
+/* Стилизация логотипа*/
+
+.logo {
+  font-family: Raleway, sans-serif;
+  /*шрифт*/
+  font-weight: 700;
+  /*насыщенность шрифта*/
+  font-size: 26px;
+  /*размер шрифта*/
+  line-height: 1.19;
+  /*междустрочный интервал*/
+}
+
+.logo span {
+  color: var(--accent-color);
+  /*цвет*/
+}
+
+.top .logo {
+  padding-top: 24px;
+  /*отступ от верхнего края*/
+  padding-bottom: 25px;
+  /*отступ от нижнего края содержимог елемента*/
+  margin-right: 93px;
+  color: var(--title-text-color);
+}
+
+.bottom .logo {
+  margin-bottom: 20px;
+  /*отступа от нижнего края */
+  color: var(--primary-gov-color);
+}

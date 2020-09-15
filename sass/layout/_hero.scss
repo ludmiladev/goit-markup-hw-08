@@ -1,0 +1,64 @@
+/* Cтилизация секции герой */
+
+.geroj {
+  /*height: 600px;*/
+  min-height: 600px;
+  outline: 1px solid black;
+  max-width: 1600px;
+  margin: 0 auto;
+  /*margin-left: auto;
+  margin-top: auto;*/
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--secondary-sov-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/geroj.jpg);
+  /*background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/geroj.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.geroj-content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 696px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.geroj-title {
+  margin: 0 auto 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /*делаем, чтоб все буквы были заглавными*/
+
+  color: var(--primary-gov-color);
+}
+
+.geroj-cnopca {
+  display: block;
+  width: 200px;
+  min-height: 50px;
+  /*минимальная высота*/
+  margin: 0 auto;
+  padding: 10px 31px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-gov-color);
+  background-color: var(--accent-color);
+
+  border-radius: 4px;
+  /*округляем края кнопки*/
+  border-width: 0;
+  /*толщина*/
+}
